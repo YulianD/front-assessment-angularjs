@@ -1,0 +1,89 @@
+<!-- Search bar-->
+<div class="d-flex justify-content-end">
+
+    <div class="p-2">
+        <input ng-model="vm.searchBox" class="form-control custom-search" type="search" placeholder="&#xf002; Search">
+    </div>
+
+</div>
+
+<!--Main content items-->
+<div class="d-flex">
+
+    <div class="container col-12">
+
+        <!--<div >-->
+        <div class="row items-repeated" ng-repeat="(key, value) in vm.shipping | filter:vm.searchBox">
+
+            <!--            Check icon-->
+            <div class="col-1 align-self-center">
+                <i class="fa fa-fw {{value.status=='delivered'?'fa-check-circle':'fa-close'}} fa-4x text-warning"></i>
+            </div>
+
+            <!--            Item body-->
+            <div class="col">
+                <div class="bg-light items-container">
+                    <div class="d-flex items">
+
+                        <div class="p-2 col-3 right-border align-self-center">
+                            <strong>{{ value.item.date | date : "EEEE" }}</strong>
+                            <p>{{ value.item.date | date : "d" }}<sup>Th </sup>{{ value.item.date | date : "HH:mm" }}</p>
+                            <p>{{ value.item.date | date : "a" }}</p>
+                        </div>
+                        <div class="p-2 col-4 right-border align-self-center">
+                            <p>{{value.origin.city}}, {{value.origin.state}}, {{value.origin.postalcode}}</p>
+                            <i class="fa fa-fw fa-angle-down fa-3x text-warning"></i>
+                            <p>{{value.destination.city}}, {{value.destination.state}}, {{value.destination.postalcode}}</p>
+                        </div>
+                        <div class="p-2 col-5 ">
+                            <div class="d-flex">
+                                <div class="p-2 col-5 align-self-center">
+                                    <i class="fa fa-fw {{value.item.means=='road'?'fa-truck':'fa-plane'}} fa-4x"></i>
+                                </div>
+                                <div class="p-2 col-5 align-self-center">
+                                    <h3>${{value.item.cost}}</h3>
+                                </div>
+
+                                <div class="p-0 col-1 align-self-center">
+                                    <p class="h2"><span class="badge badge-danger">{{value.item.amount}}</span></p>
+                                </div>
+
+                                <div class="p-0 col-1 align-self-center">
+                                    <i class="fa fa-fw fa-ellipsis-v fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--</div>-->
+    </div>
+
+
+</div>
+
+<!-- Plus button-->
+<div class="fixed-bottom p-5">
+    <a href="#" class="text-warning float-right"><i class="fa fa-plus-circle fa-5x"></i></a>
+</div>
+
+<style>
+    .items-container{
+        border-radius: 45px;
+    }
+    .items p{
+        margin-bottom: 0!important;
+    }
+    .right-border{
+
+        border-right: 2px solid gainsboro;
+    }
+    .items-repeated{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+</style>
