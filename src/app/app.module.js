@@ -20,9 +20,10 @@ angular.module('app', [
     ServicesModule.name
 ]).component('appComponent', appComponent).config(config);
 
-config.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider'];
+config.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider','$httpProvider'];
 
 function config($stateProvider, $locationProvider, $urlRouterProvider) {
+
 
 
     $locationProvider.html5Mode(true);

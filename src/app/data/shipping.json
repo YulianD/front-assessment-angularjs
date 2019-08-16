@@ -1,0 +1,122 @@
+[
+  {
+    "status": "delivered",
+    "origin": {
+      "city": "Hiuston",
+      "state": "TX",
+      "postalcode": 33619
+    },
+    "destination": {
+      "city": "Atlanta",
+      "state": "GA",
+      "postalcode": 30123
+    },
+    "item": {
+      "name": "Small package",
+      "amount": 1,
+      "cost": 250,
+      "date": "2019-08-16T00:10:22.453Z",
+      "means": "road"
+    }
+  },
+  {
+    "status": "sent",
+    "origin": {
+      "city": "Bogota",
+      "state": "DC",
+      "postalcode": 33619
+    },
+    "destination": {
+      "city": "Cali",
+      "state": "VC",
+      "postalcode": 30123
+    },
+    "item": {
+      "name": "Big package",
+      "amount": 2,
+      "cost": 500.99,
+      "date": "2019-08-14T00:10:22.453Z",
+      "means": "air"
+    }
+  },
+  {
+    "status": "delivered",
+    "origin": {
+      "city": "Medellin",
+      "state": "AQ",
+      "postalcode": 33619
+    },
+    "destination": {
+      "city": "Pereira",
+      "state": "RS",
+      "postalcode": 30123
+    },
+    "item": {
+      "name": "Normal package",
+      "amount": 1,
+      "cost": 89,
+      "date": "2019-08-10T00:10:22.453Z",
+      "means": "road"
+    }
+  },
+  {
+    "status": "delivered",
+    "origin": {
+      "city": "Hiuston",
+      "state": "TX",
+      "postalcode": 33619
+    },
+    "destination": {
+      "city": "Atlanta",
+      "state": "GA",
+      "postalcode": 30123
+    },
+    "item": {
+      "name": "Small package",
+      "amount": 1,
+      "cost": 250,
+      "date": "2019-08-16T00:10:22.453Z",
+      "means": "road"
+    }
+  },
+  {
+    "status": "sent",
+    "origin": {
+      "city": "Bogota",
+      "state": "DC",
+      "postalcode": 33619
+    },
+    "destination": {
+      "city": "Cali",
+      "state": "VC",
+      "postalcode": 30123
+    },
+    "item": {
+      "name": "Big package",
+      "amount": 2,
+      "cost": 500.99,
+      "date": "2019-08-14T00:10:22.453Z",
+      "means": "air"
+    }
+  },
+  {
+    "status": "sent",
+    "origin": {
+      "city": "Bogota",
+      "state": "DC",
+      "postalcode": 33619
+    },
+    "destination": {
+      "city": "Cali",
+      "state": "VC",
+      "postalcode": 30123
+    },
+    "item": {
+      "name": "Big package",
+      "amount": 2,
+      "cost": 500.99,
+      "date": "2019-08-14T00:10:22.453Z",
+      "means": "air"
+    }
+  }
+]

@@ -9,16 +9,8 @@ class homeController {
     $onInit(){
         var vm = this;
 
-        vm.shipping = [];
-        vm.searchBox;
-
-
-
-        vm.apiService.shippingRs(function (res) {
-            if(res.data){
-                vm.shipping=res.data;
-            }
-        })
+        vm.shippingList = [];
+        vm.shippingList = vm.apiService.shippingLocal().data;
 
     }
   }

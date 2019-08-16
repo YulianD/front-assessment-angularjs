@@ -26,20 +26,21 @@ module.exports = {
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "url-loader?limit=10000&mimetype=application/font-woff??name=/assets/fonts/[name].[ext]"
+                loader: "url-loader?limit=10000&mimetype=application/font-woff?name=/assets/fonts/[name].[ext]"
             },
             {
                 test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file-loader?name=/assets/fonts/[name].[ext]"
+                loader: "file-loader?name=/src/assets/fonts/[name].[ext]"
             },
             {
                 test: /\.(jpeg|png|gif|svg)$/i,
-                loader: "file-loader?name=/assets/images/[name].[ext]"
-            }
+                loader: "file-loader?name=/src/assets/images/[name].[ext]"
+            },
+
 
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: './src/index.html' })
+        new HtmlWebpackPlugin({template: './src/index.html'})
     ]
 }

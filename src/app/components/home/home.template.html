@@ -1,3 +1,5 @@
+
+
 <!-- Search bar-->
 <div class="d-flex justify-content-end">
 
@@ -12,8 +14,7 @@
 
     <div class="container col-12">
 
-        <!--<div >-->
-        <div class="row items-repeated" ng-repeat="(key, value) in vm.shipping | filter:vm.searchBox">
+        <div class="row items-repeated" ng-repeat="(key, value) in vm.shippingList | filter:vm.searchBox">
 
             <!--            Check icon-->
             <div class="col-1 align-self-center">
@@ -60,7 +61,7 @@
             </div>
 
         </div>
-        <!--</div>-->
+
     </div>
 
 
@@ -70,20 +71,3 @@
 <div class="fixed-bottom p-5">
     <a href="#" class="text-warning float-right"><i class="fa fa-plus-circle fa-5x"></i></a>
 </div>
-
-<style>
-    .items-container{
-        border-radius: 45px;
-    }
-    .items p{
-        margin-bottom: 0!important;
-    }
-    .right-border{
-
-        border-right: 2px solid gainsboro;
-    }
-    .items-repeated{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-</style>

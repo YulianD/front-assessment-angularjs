@@ -1,0 +1,14 @@
+.items-container{
+    border-radius: 45px;
+}
+.items p{
+    margin-bottom: 0!important;
+}
+.right-border{
+
+    border-right: 2px solid gainsboro;
+}
+.items-repeated{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -6,6 +6,6 @@ let messagesComponent = {
   bindings: {},
   template,
   controller,
-  controllerAs: 'messagesController'
+  controllerAs: 'vm'
 };
 export default messagesComponent;
